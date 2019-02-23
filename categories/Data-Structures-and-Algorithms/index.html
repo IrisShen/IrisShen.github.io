@@ -349,7 +349,7 @@
         
           <a class="post-title-link" href="/2019/02/21/BitTricks/" itemprop="url">
             
-              <span itemprop="name">Bit Manipulation Tricks</span>
+              <span itemprop="name">Bit Manipulation</span>
             
           </a>
         
@@ -646,6 +646,35 @@
 
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'mH7UHpNOo34t70xVVISrTp9d-gzGzoHsz',
+    appKey: 'l5kkljk7y7n7yDlm8RfT2ngV',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
+
 
 
 

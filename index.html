@@ -346,7 +346,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/02/21/BitTricks/" class="post-title-link" itemprop="url">Bit Manipulation Tricks</a>
+                <a href="/2019/02/21/BitTricks/" class="post-title-link" itemprop="url">Bit Manipulation</a>
               
             
           </h1>
@@ -388,7 +388,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-22 12:26:03" itemprop="dateModified" datetime="2019-02-22T12:26:03-08:00">2019-02-22</time>
+                <time title="Modified: 2019-02-22 12:29:58" itemprop="dateModified" datetime="2019-02-22T12:29:58-08:00">2019-02-22</time>
               
             
           </span>
@@ -416,6 +416,19 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/02/21/BitTricks/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/21/BitTricks/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -442,7 +455,7 @@
       
         
           
-            <h3 id="Bitwise-Operations"><a href="#Bitwise-Operations" class="headerlink" title="Bitwise Operations"></a>Bitwise Operations</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">6</span> &amp; <span class="number">4</span>     <span class="comment"># 4. Bitwise and</span></span><br><span class="line"><span class="number">1</span> | <span class="number">2</span>     <span class="comment"># 3. Bitwise or</span></span><br><span class="line"><span class="number">8</span> &gt;&gt; <span class="number">2</span>    <span class="comment"># 2. Bitwise right shift</span></span><br><span class="line"><span class="number">-16</span> &gt;&gt; <span class="number">2</span>  <span class="comment"># -4.</span></span><br><span class="line"><span class="number">-1</span> &gt;&gt; <span class="number">2</span>   <span class="comment"># -1.</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">10</span>   <span class="comment"># 1024. Bitwise left shift</span></span><br><span class="line">~<span class="number">0</span>        <span class="comment"># -1. Returns the complement</span></span><br><span class="line"><span class="number">15</span> ^ x    <span class="comment"># Bitwise XOR</span></span><br></pre></td></tr></table></figure>
+            <h3 id="Basic-Operations"><a href="#Basic-Operations" class="headerlink" title="Basic Operations"></a>Basic Operations</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">6</span> &amp; <span class="number">4</span>     <span class="comment"># 4. Bitwise and</span></span><br><span class="line"><span class="number">1</span> | <span class="number">2</span>     <span class="comment"># 3. Bitwise or</span></span><br><span class="line"><span class="number">8</span> &gt;&gt; <span class="number">2</span>    <span class="comment"># 2. Bitwise right shift</span></span><br><span class="line"><span class="number">-16</span> &gt;&gt; <span class="number">2</span>  <span class="comment"># -4.</span></span><br><span class="line"><span class="number">-1</span> &gt;&gt; <span class="number">2</span>   <span class="comment"># -1.</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">10</span>   <span class="comment"># 1024. Bitwise left shift</span></span><br><span class="line">~<span class="number">0</span>        <span class="comment"># -1. Returns the complement</span></span><br><span class="line"><span class="number">15</span> ^ x    <span class="comment"># Bitwise XOR</span></span><br></pre></td></tr></table></figure>
 <h4 id="Important-Points"><a href="#Important-Points" class="headerlink" title="Important Points"></a>Important Points</h4><ol>
 <li>A negative number <code>-x</code> is treated by bitwise operators as complement(x - 1).</li>
 <li>-1 is treated as “…11111110” since integers have infinite precision in Python.</li>
@@ -450,6 +463,7 @@
 <li><code>~ x</code> is the same as <code>- x - 1</code>.</li>
 <li>For a negative number <code>-x</code>, <code>complement(-x) = complement(complement(x - 1)) = x - 1</code>. For a positive number x, <code>complement(x) = - x - 1</code>.</li>
 </ol>
+<h3 id="Some-Tricks"><a href="#Some-Tricks" class="headerlink" title="Some Tricks"></a>Some Tricks</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
 
           
         
@@ -577,6 +591,19 @@
 
           
             
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/02/20/AboutMe/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/20/AboutMe/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -922,6 +949,35 @@
 
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'mH7UHpNOo34t70xVVISrTp9d-gzGzoHsz',
+    appKey: 'l5kkljk7y7n7yDlm8RfT2ngV',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
+
 
 
 
