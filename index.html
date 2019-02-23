@@ -96,16 +96,16 @@
 
 
 
-  <meta name="description" content="Be the change you want to see in the world.">
+  <meta name="description" content="Never a failure, always a lesson.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="沈花花笔记">
 <meta property="og:url" content="http://www.shenxueyao.com/index.html">
 <meta property="og:site_name" content="沈花花笔记">
-<meta property="og:description" content="Be the change you want to see in the world.">
+<meta property="og:description" content="Never a failure, always a lesson.">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="沈花花笔记">
-<meta name="twitter:description" content="Be the change you want to see in the world.">
+<meta name="twitter:description" content="Never a failure, always a lesson.">
 
 
 
@@ -326,11 +326,191 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.shenxueyao.com/2019/02/21/BitTricks/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xueyao Shen">
+      <meta itemprop="description" content="Never a failure, always a lesson.">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="沈花花笔记">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/02/21/BitTricks/" class="post-title-link" itemprop="url">Bit Manipulation Tricks</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-02-21 16:21:45" itemprop="dateCreated datePublished" datetime="2019-02-21T16:21:45-08:00">2019-02-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-02-22 12:26:03" itemprop="dateModified" datetime="2019-02-22T12:26:03-08:00">2019-02-22</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Data-Structures-and-Algorithms/" itemprop="url" rel="index"><span itemprop="name">Data Structures and Algorithms</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Bitwise-Operations"><a href="#Bitwise-Operations" class="headerlink" title="Bitwise Operations"></a>Bitwise Operations</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">6</span> &amp; <span class="number">4</span>     <span class="comment"># 4. Bitwise and</span></span><br><span class="line"><span class="number">1</span> | <span class="number">2</span>     <span class="comment"># 3. Bitwise or</span></span><br><span class="line"><span class="number">8</span> &gt;&gt; <span class="number">2</span>    <span class="comment"># 2. Bitwise right shift</span></span><br><span class="line"><span class="number">-16</span> &gt;&gt; <span class="number">2</span>  <span class="comment"># -4.</span></span><br><span class="line"><span class="number">-1</span> &gt;&gt; <span class="number">2</span>   <span class="comment"># -1.</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">10</span>   <span class="comment"># 1024. Bitwise left shift</span></span><br><span class="line">~<span class="number">0</span>        <span class="comment"># -1. Returns the complement</span></span><br><span class="line"><span class="number">15</span> ^ x    <span class="comment"># Bitwise XOR</span></span><br></pre></td></tr></table></figure>
+<h4 id="Important-Points"><a href="#Important-Points" class="headerlink" title="Important Points"></a>Important Points</h4><ol>
+<li>A negative number <code>-x</code> is treated by bitwise operators as complement(x - 1).</li>
+<li>-1 is treated as “…11111110” since integers have infinite precision in Python.</li>
+<li>There is no concept of an unsigned shift in Python.</li>
+<li><code>~ x</code> is the same as <code>- x - 1</code>.</li>
+<li>For a negative number <code>-x</code>, <code>complement(-x) = complement(complement(x - 1)) = x - 1</code>. For a positive number x, <code>complement(x) = - x - 1</code>.</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.shenxueyao.com/2019/02/20/AboutMe/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xueyao Shen">
-      <meta itemprop="description" content="Be the change you want to see in the world.">
+      <meta itemprop="description" content="Never a failure, always a lesson.">
       <meta itemprop="image" content="/images/avatar.jpeg">
     </span>
 
@@ -505,7 +685,7 @@
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpeg" alt="Xueyao Shen">
             
               <p class="site-author-name" itemprop="name">Xueyao Shen</p>
-              <p class="site-description motion-element" itemprop="description">Be the change you want to see in the world.</p>
+              <p class="site-description motion-element" itemprop="description">Never a failure, always a lesson.</p>
           </div>
 
           
@@ -515,12 +695,25 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
               
 
               
@@ -532,7 +725,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
