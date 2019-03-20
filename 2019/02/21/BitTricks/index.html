@@ -97,14 +97,14 @@
 
 
   <meta name="description" content="Basic Operations123456786 &amp;amp; 4     # 4. Bitwise and1 | 2     # 3. Bitwise or8 &amp;gt;&amp;gt; 2    # 2. Bitwise right shift-16 &amp;gt;&amp;gt; 2  # -4.-1 &amp;gt;&amp;gt; 2   # -1.1 &amp;lt;&amp;lt; 10   # 1024. Bitwise left sh">
-<meta name="keywords" content="Interview Questions,EPI">
+<meta name="keywords" content="Interview Questions,EPI,Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Bit Manipulation">
 <meta property="og:url" content="http://www.shenxueyao.com/2019/02/21/BitTricks/index.html">
 <meta property="og:site_name" content="沈花花笔记">
 <meta property="og:description" content="Basic Operations123456786 &amp;amp; 4     # 4. Bitwise and1 | 2     # 3. Bitwise or8 &amp;gt;&amp;gt; 2    # 2. Bitwise right shift-16 &amp;gt;&amp;gt; 2  # -4.-1 &amp;gt;&amp;gt; 2   # -1.1 &amp;lt;&amp;lt; 10   # 1024. Bitwise left sh">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-22T20:29:58.073Z">
+<meta property="og:updated_time" content="2019-03-20T22:05:44.208Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bit Manipulation">
 <meta name="twitter:description" content="Basic Operations123456786 &amp;amp; 4     # 4. Bitwise and1 | 2     # 3. Bitwise or8 &amp;gt;&amp;gt; 2    # 2. Bitwise right shift-16 &amp;gt;&amp;gt; 2  # -4.-1 &amp;gt;&amp;gt; 2   # -1.1 &amp;lt;&amp;lt; 10   # 1024. Bitwise left sh">
@@ -387,7 +387,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-22 12:29:58" itemprop="dateModified" datetime="2019-02-22T12:29:58-08:00">2019-02-22</time>
+                <time title="Modified: 2019-03-20 15:05:44" itemprop="dateModified" datetime="2019-03-20T15:05:44-07:00">2019-03-20</time>
               
             
           </span>
@@ -458,9 +458,9 @@
 <li>-1 is treated as “…11111110” since integers have infinite precision in Python.</li>
 <li>There is no concept of an unsigned shift in Python.</li>
 <li><code>~ x</code> is the same as <code>- x - 1</code>.</li>
-<li>For a negative number <code>-x</code>, <code>complement(-x) = complement(complement(x - 1)) = x - 1</code>. For a positive number x, <code>complement(x) = - x - 1</code>.</li>
+<li>For a negative number <code>-x</code>, <code>complement(-x) = complement(complement(x - 1)) = x - 1</code>. For a positive number <code>x</code>, <code>complement(x) = - x - 1</code>.</li>
 </ol>
-<h3 id="Some-Tricks"><a href="#Some-Tricks" class="headerlink" title="Some Tricks"></a>Some Tricks</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="Some-Tricks"><a href="#Some-Tricks" class="headerlink" title="Some Tricks"></a>Some Tricks</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># clear the lowermost set bit</span></span><br><span class="line">x &amp; (x - <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># right propagate the rightmost set bit in x</span></span><br><span class="line">x | (x - <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># test if x is  a power of 2</span></span><br><span class="line">x &amp; (x - <span class="number">1</span>) == <span class="number">0</span> <span class="keyword">and</span> x != <span class="number">0</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -488,6 +488,8 @@
           
             <a href="/tags/EPI/" rel="tag"># EPI</a>
           
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
         </div>
       
 
@@ -508,6 +510,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/20/types/" rel="prev" title="Python Primitive Types">
+                Python Primitive Types <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -585,7 +591,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -600,7 +606,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -619,7 +627,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
