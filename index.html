@@ -371,7 +371,7 @@
                 
               
 
-              <time title="Created: 2019-03-20 14:39:14 / Modified: 15:08:45" itemprop="dateCreated datePublished" datetime="2019-03-20T14:39:14-07:00">2019-03-20</time>
+              <time title="Created: 2019-03-20 14:39:14 / Modified: 15:25:32" itemprop="dateCreated datePublished" datetime="2019-03-20T14:39:14-07:00">2019-03-20</time>
             
 
             
@@ -442,14 +442,20 @@
 
       
         
+          <h3 id="Integer"><a href="#Integer" class="headerlink" title="Integer"></a>Integer</h3><p>Integers in Python3 are unbounded. The maximum integer representable is a function of the available memory.<br>There is no concept of an unsigned shift/integer in Python since integers have infinite precision. (Need to be careful about shifting <a href="/2019/02/21/BitTricks/" title="here">here</a>).</p>
+<h3 id="float"><a href="#float" class="headerlink" title="float"></a>float</h3><p>Floats, unlike integers, are not infinite precision. <code>float(&#39;inf&#39;)</code> and <code>float(&#39;-inf&#39;)</code> are used to refer to infinity. These values are comparable to integers and can be used to create pseudo max-int and pseudo min-int.<br>
+          <!--noindex-->
           
-            <h3 id="Integer"><a href="#Integer" class="headerlink" title="Integer"></a>Integer</h3><p>Integers in Python3 are unbounded. The maximum integer representable is a function of the available memory.<br>There is no concept of an unsigned shift/integer in Python since integers have infinite precision. (Need to be careful about shifting <a href="/2019/02/21/BitTricks/" title="here">here</a>).</p>
-<h3 id="float"><a href="#float" class="headerlink" title="float"></a>float</h3><p>Floats, unlike integers, are not infinite precision. <code>float(&#39;inf&#39;)</code> and <code>float(&#39;-inf&#39;)</code> are used to refer to infinity. These values are comparable to integers and can be used to create pseudo max-int and pseudo min-int.<br>When comparing floating point values use <code>math.isclose()</code>. It is robust as for when comparing very large values, and can handle both absolute and relative differences.</p>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/20/types/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
 
     
 
@@ -563,7 +569,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-20 15:05:44" itemprop="dateModified" datetime="2019-03-20T15:05:44-07:00">2019-03-20</time>
+                <time title="Modified: 2019-03-20 15:25:16" itemprop="dateModified" datetime="2019-03-20T15:25:16-07:00">2019-03-20</time>
               
             
           </span>
@@ -629,21 +635,25 @@
 
       
         
-          
-            <h3 id="Basic-Operations"><a href="#Basic-Operations" class="headerlink" title="Basic Operations"></a>Basic Operations</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">6</span> &amp; <span class="number">4</span>     <span class="comment"># 4. Bitwise and</span></span><br><span class="line"><span class="number">1</span> | <span class="number">2</span>     <span class="comment"># 3. Bitwise or</span></span><br><span class="line"><span class="number">8</span> &gt;&gt; <span class="number">2</span>    <span class="comment"># 2. Bitwise right shift</span></span><br><span class="line"><span class="number">-16</span> &gt;&gt; <span class="number">2</span>  <span class="comment"># -4.</span></span><br><span class="line"><span class="number">-1</span> &gt;&gt; <span class="number">2</span>   <span class="comment"># -1.</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">10</span>   <span class="comment"># 1024. Bitwise left shift</span></span><br><span class="line">~<span class="number">0</span>        <span class="comment"># -1. Returns the complement</span></span><br><span class="line"><span class="number">15</span> ^ x    <span class="comment"># Bitwise XOR</span></span><br></pre></td></tr></table></figure>
+          <h3 id="Basic-Operations"><a href="#Basic-Operations" class="headerlink" title="Basic Operations"></a>Basic Operations</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">6</span> &amp; <span class="number">4</span>     <span class="comment"># 4. Bitwise and</span></span><br><span class="line"><span class="number">1</span> | <span class="number">2</span>     <span class="comment"># 3. Bitwise or</span></span><br><span class="line"><span class="number">8</span> &gt;&gt; <span class="number">2</span>    <span class="comment"># 2. Bitwise right shift</span></span><br><span class="line"><span class="number">-16</span> &gt;&gt; <span class="number">2</span>  <span class="comment"># -4.</span></span><br><span class="line"><span class="number">-1</span> &gt;&gt; <span class="number">2</span>   <span class="comment"># -1.</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">10</span>   <span class="comment"># 1024. Bitwise left shift</span></span><br><span class="line">~<span class="number">0</span>        <span class="comment"># -1. Returns the complement</span></span><br><span class="line"><span class="number">15</span> ^ x    <span class="comment"># Bitwise XOR</span></span><br></pre></td></tr></table></figure>
 <h4 id="Important-Points"><a href="#Important-Points" class="headerlink" title="Important Points"></a>Important Points</h4><ol>
 <li>A negative number <code>-x</code> is treated by bitwise operators as complement(x - 1).</li>
 <li>-1 is treated as “…11111110” since integers have infinite precision in Python.</li>
 <li>There is no concept of an unsigned shift in Python.</li>
 <li><code>~ x</code> is the same as <code>- x - 1</code>.</li>
-<li>For a negative number <code>-x</code>, <code>complement(-x) = complement(complement(x - 1)) = x - 1</code>. For a positive number <code>x</code>, <code>complement(x) = - x - 1</code>.</li>
-</ol>
-<h3 id="Some-Tricks"><a href="#Some-Tricks" class="headerlink" title="Some Tricks"></a>Some Tricks</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># clear the lowermost set bit</span></span><br><span class="line">x &amp; (x - <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># right propagate the rightmost set bit in x</span></span><br><span class="line">x | (x - <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># test if x is  a power of 2</span></span><br><span class="line">x &amp; (x - <span class="number">1</span>) == <span class="number">0</span> <span class="keyword">and</span> x != <span class="number">0</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
+<li>For a negative number <code>-x</code>, <code>complement(-x) = complement(complement(x - 1)) = x - 1</code>. For a positive number <code>x</code>, <code>complement(x) = - x - 1</code>.
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/02/21/BitTricks/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
-    </div>
+    </li></ol></div>
 
     
 
