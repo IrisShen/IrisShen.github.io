@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="IntegerIntegers in Python3 are unbounded. The maximum integer representable is a function of the available memory.There is no concept of an unsigned shift/integer in Python since integers have infinit">
+  <meta name="description" content="IntegersIntegers in Python3 are unbounded. The maximum integer representable is a function of the available memory.There is no concept of an unsigned shift/integer in Python since integers have infini">
 <meta name="keywords" content="Interview Questions,EPI,Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python Primitive Types">
+<meta property="og:title" content="Primitive Numeric Types">
 <meta property="og:url" content="http://www.shenxueyao.com/2019/03/20/types/index.html">
 <meta property="og:site_name" content="沈花花笔记">
-<meta property="og:description" content="IntegerIntegers in Python3 are unbounded. The maximum integer representable is a function of the available memory.There is no concept of an unsigned shift/integer in Python since integers have infinit">
+<meta property="og:description" content="IntegersIntegers in Python3 are unbounded. The maximum integer representable is a function of the available memory.There is no concept of an unsigned shift/integer in Python since integers have infini">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-20T22:25:32.203Z">
+<meta property="og:updated_time" content="2019-03-20T22:40:01.512Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python Primitive Types">
-<meta name="twitter:description" content="IntegerIntegers in Python3 are unbounded. The maximum integer representable is a function of the available memory.There is no concept of an unsigned shift/integer in Python since integers have infinit">
+<meta name="twitter:title" content="Primitive Numeric Types">
+<meta name="twitter:description" content="IntegersIntegers in Python3 are unbounded. The maximum integer representable is a function of the available memory.There is no concept of an unsigned shift/integer in Python since integers have infini">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>Python Primitive Types | 沈花花笔记</title>
+  <title>Primitive Numeric Types | 沈花花笔记</title>
   
 
 
@@ -344,7 +344,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python Primitive Types
+          <h1 class="post-title" itemprop="name headline">Primitive Numeric Types
 
               
             
@@ -370,7 +370,7 @@
                 
               
 
-              <time title="Created: 2019-03-20 14:39:14 / Modified: 15:25:32" itemprop="dateCreated datePublished" datetime="2019-03-20T14:39:14-07:00">2019-03-20</time>
+              <time title="Created: 2019-03-20 14:39:14 / Modified: 15:40:01" itemprop="dateCreated datePublished" datetime="2019-03-20T14:39:14-07:00">2019-03-20</time>
             
 
             
@@ -440,8 +440,11 @@
       
 
       
-        <h3 id="Integer"><a href="#Integer" class="headerlink" title="Integer"></a>Integer</h3><p>Integers in Python3 are unbounded. The maximum integer representable is a function of the available memory.<br>There is no concept of an unsigned shift/integer in Python since integers have infinite precision. (Need to be careful about shifting <a href="/2019/02/21/BitTricks/" title="here">here</a>).</p>
-<h3 id="float"><a href="#float" class="headerlink" title="float"></a>float</h3><p>Floats, unlike integers, are not infinite precision. <code>float(&#39;inf&#39;)</code> and <code>float(&#39;-inf&#39;)</code> are used to refer to infinity. These values are comparable to integers and can be used to create pseudo max-int and pseudo min-int.<br><a id="more"></a><br>When comparing floating point values use <code>math.isclose()</code>. It is robust as for when comparing very large values, and can handle both absolute and relative differences.</p>
+        <h3 id="Integers"><a href="#Integers" class="headerlink" title="Integers"></a>Integers</h3><p>Integers in Python3 are unbounded. The maximum integer representable is a function of the available memory.<br>There is no concept of an unsigned shift/integer in Python since integers have infinite precision. (Need to be careful about shifting <a href="/2019/02/21/BitTricks/" title="here">here</a>).</p>
+<h3 id="Floats"><a href="#Floats" class="headerlink" title="Floats"></a>Floats</h3><p>Floats, unlike integers, are not infinite precision. <code>float(&#39;inf&#39;)</code> and <code>float(&#39;-inf&#39;)</code> are used to refer to infinity. These values are comparable to integers and can be used to create pseudo max-int and pseudo min-int.<br>When comparing floating point values use <code>math.isclose()</code>. It is robust as for when comparing very large values, and can handle both absolute and relative differences.<br><a id="more"></a></p>
+<h3 id="Key-methods-for-Numeric-Types"><a href="#Key-methods-for-Numeric-Types" class="headerlink" title="Key methods for Numeric Types"></a>Key methods for Numeric Types</h3><h4 id="numeric-manipulation"><a href="#numeric-manipulation" class="headerlink" title="numeric manipulation"></a>numeric manipulation</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">abs(<span class="number">-34.5</span>)        <span class="comment"># absolute value</span></span><br><span class="line">math.ceil(<span class="number">2.17</span>)   <span class="comment"># 3</span></span><br><span class="line">math.floor(<span class="number">2.17</span>)  <span class="comment"># 2</span></span><br><span class="line">min(x,<span class="number">-4</span>)</span><br><span class="line">max(<span class="number">5</span>,y)</span><br><span class="line">pow(<span class="number">3.14</span>,<span class="number">5.6</span>)     <span class="comment"># 3.14 ** 5.6</span></span><br><span class="line">math.sqrt(<span class="number">225</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="interconvert-numbers-and-strings"><a href="#interconvert-numbers-and-strings" class="headerlink" title="interconvert numbers and strings"></a>interconvert numbers and strings</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># integer</span></span><br><span class="line">str(<span class="number">42</span>)</span><br><span class="line">int(<span class="string">'42'</span>)</span><br><span class="line"><span class="comment"># float</span></span><br><span class="line">str(<span class="number">3.14</span>)</span><br><span class="line">float(<span class="string">'3.14'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="random-number-generators"><a href="#random-number-generators" class="headerlink" title="random number generators"></a>random number generators</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">random.randrange(start,stop[,step])   <span class="comment"># here stop is not included</span></span><br><span class="line">random.randint(<span class="number">8</span>,<span class="number">16</span>)                  <span class="comment"># here stop is included</span></span><br><span class="line">random.random()                       <span class="comment"># [0,1)  </span></span><br><span class="line">random.shuffle(A)                     <span class="comment"># shuffle list A in place</span></span><br><span class="line">random.choice(A)</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -673,7 +676,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Integer"><span class="nav-number">1.</span> <span class="nav-text">Integer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#float"><span class="nav-number">2.</span> <span class="nav-text">float</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Integers"><span class="nav-number">1.</span> <span class="nav-text">Integers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Floats"><span class="nav-number">2.</span> <span class="nav-text">Floats</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Key-methods-for-Numeric-Types"><span class="nav-number">3.</span> <span class="nav-text">Key methods for Numeric Types</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#numeric-manipulation"><span class="nav-number">3.1.</span> <span class="nav-text">numeric manipulation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#interconvert-numbers-and-strings"><span class="nav-number">3.2.</span> <span class="nav-text">interconvert numbers and strings</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#random-number-generators"><span class="nav-number">3.3.</span> <span class="nav-text">random number generators</span></a></li></ol></li></ol></div>
             
 
           </div>
