@@ -371,7 +371,7 @@
                 
               
 
-              <time title="Created: 2019-03-29 10:48:17 / Modified: 10:57:15" itemprop="dateCreated datePublished" datetime="2019-03-29T10:48:17-07:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 10:48:17 / Modified: 11:09:19" itemprop="dateCreated datePublished" datetime="2019-03-29T10:48:17-07:00">2019-03-29</time>
             
 
             
@@ -443,13 +443,19 @@
       
         
           
-            <h3 id="problems"><a href="#problems" class="headerlink" title="problems"></a>problems</h3><ol>
+            <h3 id="Problems"><a href="#Problems" class="headerlink" title="Problems"></a>Problems</h3><ol>
 <li>leetcode 56: Merge Intervals</li>
 <li>leetcode 252: Meeting Rooms</li>
 <li>leetcode 253: Meeting Rooms II</li>
 <li>leetcode 435: Non-Overlapping Intervals</li>
 <li>leetcode 452: Minimum Number of Arrows to Burst Balloons</li>
 <li>geekforgeeks: <a href="https://www.geeksforgeeks.org/find-the-point-where-maximum-intervals-overlap/" title="[external]" target="_blank" rel="noopener">Find the point where maximum intervals overlap</a></li>
+</ol>
+<h3 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h3><ol>
+<li>One of the basic algorithm ideas used is <strong>Greedy</strong>, to find the first</li>
+<li>Intervals need to be sorted by start or end based on problem.<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">intervals.sort(key = <span class="keyword">lambda</span> x : x.start)</span><br></pre></td></tr></table></figure></li>
+<li>Meeting Rooms II uses heapq (i.e. priority queue) to find the ending time of the non-overlapping set of intervals that ends first.</li>
+<li>To find the point where maximum number of intervals overlap is the same as finding the minimum number of rooms needed for all intervals: since for such a point, non of the intervals can be put into a same meeting room.</li>
 </ol>
 
           
