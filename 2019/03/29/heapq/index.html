@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="Heap Queue AlgorithmThe Python heapq module provides an implementation of the heap queue algorithm, a.k.a.m, the priority queue algorithm.In Python, heaps are implemented using regular python lists. I">
+  <meta name="description" content="Heap Queue AlgorithmThe Python heapq module provides an implementation of the heap queue algorithm, a.k.a., the priority queue algorithm.In Python, heaps are implemented using regular python lists. In">
 <meta name="keywords" content="Python,Leetcode">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Heapq">
 <meta property="og:url" content="http://www.shenxueyao.com/2019/03/29/heapq/index.html">
 <meta property="og:site_name" content="沈花花笔记">
-<meta property="og:description" content="Heap Queue AlgorithmThe Python heapq module provides an implementation of the heap queue algorithm, a.k.a.m, the priority queue algorithm.In Python, heaps are implemented using regular python lists. I">
+<meta property="og:description" content="Heap Queue AlgorithmThe Python heapq module provides an implementation of the heap queue algorithm, a.k.a., the priority queue algorithm.In Python, heaps are implemented using regular python lists. In">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-29T22:31:28.041Z">
+<meta property="og:updated_time" content="2019-03-29T22:34:31.210Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Heapq">
-<meta name="twitter:description" content="Heap Queue AlgorithmThe Python heapq module provides an implementation of the heap queue algorithm, a.k.a.m, the priority queue algorithm.In Python, heaps are implemented using regular python lists. I">
+<meta name="twitter:description" content="Heap Queue AlgorithmThe Python heapq module provides an implementation of the heap queue algorithm, a.k.a., the priority queue algorithm.In Python, heaps are implemented using regular python lists. In">
 
 
 
@@ -370,7 +370,7 @@
                 
               
 
-              <time title="Created: 2019-03-29 11:38:44 / Modified: 15:31:28" itemprop="dateCreated datePublished" datetime="2019-03-29T11:38:44-07:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 11:38:44 / Modified: 15:34:31" itemprop="dateCreated datePublished" datetime="2019-03-29T11:38:44-07:00">2019-03-29</time>
             
 
             
@@ -454,7 +454,7 @@
       
 
       
-        <h3 id="Heap-Queue-Algorithm"><a href="#Heap-Queue-Algorithm" class="headerlink" title="Heap Queue Algorithm"></a>Heap Queue Algorithm</h3><p>The Python heapq module provides an implementation of the heap queue algorithm, a.k.a.m, the priority queue algorithm.<br>In Python, heaps are implemented using regular python lists. In a heap, for all <em>k</em>,  <code>heap[k] &lt;= heap[2*k+1]</code> and <code>heap[k] &lt;= heap[2*k+2]</code>, and this property is called heap invariant. Therefore, heap[0] is always the smallest element (i.e, it’s a min-heap), and <strong><code>heap.sort()</code> maintains the heap invariant property!</strong><br>To create a heap, simply use a list initialized to [], or transform a populated list into a heap via function <code>heapify()</code>.</p>
+        <h3 id="Heap-Queue-Algorithm"><a href="#Heap-Queue-Algorithm" class="headerlink" title="Heap Queue Algorithm"></a>Heap Queue Algorithm</h3><p>The Python heapq module provides an implementation of the heap queue algorithm, a.k.a., the priority queue algorithm.<br>In Python, heaps are implemented using regular python lists. In a heap, for all <em>k</em>,  <code>heap[k] &lt;= heap[2*k+1]</code> and <code>heap[k] &lt;= heap[2*k+2]</code>, and this property is called heap invariant. Therefore, <code>heap[0]</code> is always the smallest element (i.e, it is a min-heap), and <strong><code>heap.sort()</code> maintains the heap invariant property!</strong><br>To create a heap, simply use a list initialized to <code>[]</code>, or transform a populated list into a heap via function <code>heapify()</code>.<br><a id="more"></a></p>
 <h3 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">heapq.heappush(heap,item)    <span class="comment"># push*item onto the heap, maintaining the heap invariant.</span></span><br><span class="line">heapq.heappop(heap)          <span class="comment"># pop and return the smallest item from the heap, maintaining the heap invariant.</span></span><br><span class="line">heapq.heappushpop(heap,item) <span class="comment"># push item onto the heap, then pop and return the smallest item from the heap. The combined action runs more efficiently than separate calls to heappush() and heappop().</span></span><br><span class="line">heapq.heapify(x)             <span class="comment"># transform list x into a heap in-place in linear time.</span></span><br><span class="line">heapq.heapreplace(heap,item) <span class="comment"># pop and return the smallest item from the heap and also push the new item. The heap size doesn't change.</span></span><br><span class="line">heapq.merge(*iterables)    <span class="comment"># merge multiple sorted inputs into a single sorted output. Returns an iteratorover the sorted values. (???)</span></span><br><span class="line">heapq.nlargest(n,iterable[,key]) <span class="comment"># Return a list with the n largest elements from the dataset defined by iterable.</span></span><br><span class="line">heapq.nsmallest(n,iterable[,key]) <span class="comment"># Return a list with the n smallest elements from the dataset defined by iterable.</span></span><br></pre></td></tr></table></figure>
 
       

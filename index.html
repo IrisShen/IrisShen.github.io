@@ -371,7 +371,7 @@
                 
               
 
-              <time title="Created: 2019-03-29 11:38:44 / Modified: 15:31:28" itemprop="dateCreated datePublished" datetime="2019-03-29T11:38:44-07:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 11:38:44 / Modified: 15:34:31" itemprop="dateCreated datePublished" datetime="2019-03-29T11:38:44-07:00">2019-03-29</time>
             
 
             
@@ -449,14 +449,19 @@
 
       
         
+          <h3 id="Heap-Queue-Algorithm"><a href="#Heap-Queue-Algorithm" class="headerlink" title="Heap Queue Algorithm"></a>Heap Queue Algorithm</h3><p>The Python heapq module provides an implementation of the heap queue algorithm, a.k.a., the priority queue algorithm.<br>In Python, heaps are implemented using regular python lists. In a heap, for all <em>k</em>,  <code>heap[k] &lt;= heap[2*k+1]</code> and <code>heap[k] &lt;= heap[2*k+2]</code>, and this property is called heap invariant. Therefore, <code>heap[0]</code> is always the smallest element (i.e, it is a min-heap), and <strong><code>heap.sort()</code> maintains the heap invariant property!</strong><br>To create a heap, simply use a list initialized to <code>[]</code>, or transform a populated list into a heap via function <code>heapify()</code>.<br>
+          <!--noindex-->
           
-            <h3 id="Heap-Queue-Algorithm"><a href="#Heap-Queue-Algorithm" class="headerlink" title="Heap Queue Algorithm"></a>Heap Queue Algorithm</h3><p>The Python heapq module provides an implementation of the heap queue algorithm, a.k.a.m, the priority queue algorithm.<br>In Python, heaps are implemented using regular python lists. In a heap, for all <em>k</em>,  <code>heap[k] &lt;= heap[2*k+1]</code> and <code>heap[k] &lt;= heap[2*k+2]</code>, and this property is called heap invariant. Therefore, heap[0] is always the smallest element (i.e, it’s a min-heap), and <strong><code>heap.sort()</code> maintains the heap invariant property!</strong><br>To create a heap, simply use a list initialized to [], or transform a populated list into a heap via function <code>heapify()</code>.</p>
-<h3 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">heapq.heappush(heap,item)    <span class="comment"># push*item onto the heap, maintaining the heap invariant.</span></span><br><span class="line">heapq.heappop(heap)          <span class="comment"># pop and return the smallest item from the heap, maintaining the heap invariant.</span></span><br><span class="line">heapq.heappushpop(heap,item) <span class="comment"># push item onto the heap, then pop and return the smallest item from the heap. The combined action runs more efficiently than separate calls to heappush() and heappop().</span></span><br><span class="line">heapq.heapify(x)             <span class="comment"># transform list x into a heap in-place in linear time.</span></span><br><span class="line">heapq.heapreplace(heap,item) <span class="comment"># pop and return the smallest item from the heap and also push the new item. The heap size doesn't change.</span></span><br><span class="line">heapq.merge(*iterables)    <span class="comment"># merge multiple sorted inputs into a single sorted output. Returns an iteratorover the sorted values. (???)</span></span><br><span class="line">heapq.nlargest(n,iterable[,key]) <span class="comment"># Return a list with the n largest elements from the dataset defined by iterable.</span></span><br><span class="line">heapq.nsmallest(n,iterable[,key]) <span class="comment"># Return a list with the n smallest elements from the dataset defined by iterable.</span></span><br></pre></td></tr></table></figure>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/heapq/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
 
     
 
@@ -553,7 +558,7 @@
                 
               
 
-              <time title="Created: 2019-03-29 10:48:17 / Modified: 11:11:30" itemprop="dateCreated datePublished" datetime="2019-03-29T10:48:17-07:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 10:48:17 / Modified: 15:34:41" itemprop="dateCreated datePublished" datetime="2019-03-29T10:48:17-07:00">2019-03-29</time>
             
 
             
@@ -624,26 +629,25 @@
 
       
         
-          
-            <h3 id="Problems"><a href="#Problems" class="headerlink" title="Problems"></a>Problems</h3><ol>
+          <h3 id="Problems"><a href="#Problems" class="headerlink" title="Problems"></a>Problems</h3><ol>
 <li>leetcode 56: Merge Intervals</li>
 <li>leetcode 252: Meeting Rooms</li>
 <li>leetcode 253: Meeting Rooms II</li>
 <li>leetcode 435: Non-Overlapping Intervals</li>
 <li>leetcode 452: Minimum Number of Arrows to Burst Balloons</li>
-<li>geekforgeeks: <a href="https://www.geeksforgeeks.org/find-the-point-where-maximum-intervals-overlap/" title="[external]" target="_blank" rel="noopener">Find the point where maximum intervals overlap</a></li>
-</ol>
-<h3 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h3><ol>
-<li>One of the basic algorithm ideas used is <strong>Greedy</strong></li>
-<li>Intervals need to be sorted by start or end based on problem.<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">intervals.sort(key = <span class="keyword">lambda</span> x : x.start)</span><br></pre></td></tr></table></figure></li>
-<li>Meeting Rooms II uses heapq (i.e. priority queue) to find the ending time of the non-overlapping set of intervals that ends first.</li>
-<li>To find the point where maximum number of intervals overlap is the same as finding the minimum number of rooms needed for all intervals: since for such a point, non of the intervals can be put into a same meeting room.</li>
-</ol>
-
+<li>geekforgeeks: <a href="https://www.geeksforgeeks.org/find-the-point-where-maximum-intervals-overlap/" title="[external]" target="_blank" rel="noopener">Find the point where maximum intervals overlap</a>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/problems/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
-    </div>
+    </li></ol></div>
 
     
 
@@ -740,12 +744,24 @@
                 
               
 
-              <time title="Created: 2019-03-20 14:39:14 / Modified: 15:43:09" itemprop="dateCreated datePublished" datetime="2019-03-20T14:39:14-07:00">2019-03-20</time>
+              <time title="Created: 2019-03-20 14:39:14" itemprop="dateCreated datePublished" datetime="2019-03-20T14:39:14-07:00">2019-03-20</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-03-29 15:34:33" itemprop="dateModified" datetime="2019-03-29T15:34:33-07:00">2019-03-29</time>
               
             
           </span>
@@ -811,8 +827,7 @@
 
       
         
-          <h3 id="Integers"><a href="#Integers" class="headerlink" title="Integers"></a>Integers</h3><p>Integers in Python3 are unbounded. The maximum integer representable is a function of the available memory.<br>There is no concept of an unsigned shift/integer in Python since integers have infinite precision. (Need to be careful about shifting <a href="/2019/02/21/BitTricks/" title="here">here</a>).</p>
-<h3 id="Floats"><a href="#Floats" class="headerlink" title="Floats"></a>Floats</h3><p>Floats, unlike integers, are not infinite precision. <code>float(&#39;inf&#39;)</code> and <code>float(&#39;-inf&#39;)</code> are used to refer to infinity. These values are comparable to integers and can be used to create pseudo max-int and pseudo min-int.<br>When comparing floating point values use <code>math.isclose()</code>. It is robust as for when comparing very large values, and can handle both absolute and relative differences.<br>
+          <h3 id="Integers"><a href="#Integers" class="headerlink" title="Integers"></a>Integers</h3><p>Integers in Python3 are unbounded. The maximum integer representable is a function of the available memory.<br>There is no concept of an unsigned shift/integer in Python since integers have infinite precision. (Need to be careful about shifting <a href="/2019/02/21/BitTricks/" title="here">here</a>).<br>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -938,7 +953,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-20 15:44:58" itemprop="dateModified" datetime="2019-03-20T15:44:58-07:00">2019-03-20</time>
+                <time title="Modified: 2019-03-29 15:34:48" itemprop="dateModified" datetime="2019-03-29T15:34:48-07:00">2019-03-29</time>
               
             
           </span>
@@ -1005,12 +1020,6 @@
       
         
           <h3 id="Basic-Operations"><a href="#Basic-Operations" class="headerlink" title="Basic Operations"></a>Basic Operations</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">6</span> &amp; <span class="number">4</span>     <span class="comment"># 4. Bitwise and</span></span><br><span class="line"><span class="number">1</span> | <span class="number">2</span>     <span class="comment"># 3. Bitwise or</span></span><br><span class="line"><span class="number">8</span> &gt;&gt; <span class="number">2</span>    <span class="comment"># 2. Bitwise right shift</span></span><br><span class="line"><span class="number">-16</span> &gt;&gt; <span class="number">2</span>  <span class="comment"># -4.</span></span><br><span class="line"><span class="number">-1</span> &gt;&gt; <span class="number">2</span>   <span class="comment"># -1.</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">10</span>   <span class="comment"># 1024. Bitwise left shift</span></span><br><span class="line">~<span class="number">0</span>        <span class="comment"># -1. Returns the complement</span></span><br><span class="line"><span class="number">15</span> ^ x    <span class="comment"># Bitwise XOR</span></span><br></pre></td></tr></table></figure>
-<h4 id="Important-Points"><a href="#Important-Points" class="headerlink" title="Important Points"></a>Important Points</h4><ol>
-<li>A negative number <code>-x</code> is treated by bitwise operators as complement(x - 1).</li>
-<li>-1 is treated as “…11111110” since integers have infinite precision in Python.</li>
-<li>There is no concept of an unsigned shift in Python.</li>
-<li><code>~ x</code> is the same as <code>- x - 1</code>.</li>
-<li>For a negative number <code>-x</code>, <code>complement(-x) = complement(complement(x - 1)) = x - 1</code>. For a positive number <code>x</code>, <code>complement(x) = - x - 1</code>.
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1022,7 +1031,7 @@
           <!--/noindex-->
         
       
-    </li></ol></div>
+    </div>
 
     
 

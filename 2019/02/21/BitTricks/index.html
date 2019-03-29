@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="沈花花笔记">
 <meta property="og:description" content="Basic Operations123456786 &amp;amp; 4     # 4. Bitwise and1 | 2     # 3. Bitwise or8 &amp;gt;&amp;gt; 2    # 2. Bitwise right shift-16 &amp;gt;&amp;gt; 2  # -4.-1 &amp;gt;&amp;gt; 2   # -1.1 &amp;lt;&amp;lt; 10   # 1024. Bitwise left sh">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-20T22:44:58.023Z">
+<meta property="og:updated_time" content="2019-03-29T22:34:48.338Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bit Manipulation">
 <meta name="twitter:description" content="Basic Operations123456786 &amp;amp; 4     # 4. Bitwise and1 | 2     # 3. Bitwise or8 &amp;gt;&amp;gt; 2    # 2. Bitwise right shift-16 &amp;gt;&amp;gt; 2  # -4.-1 &amp;gt;&amp;gt; 2   # -1.1 &amp;lt;&amp;lt; 10   # 1024. Bitwise left sh">
@@ -387,7 +387,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-20 15:44:58" itemprop="dateModified" datetime="2019-03-20T15:44:58-07:00">2019-03-20</time>
+                <time title="Modified: 2019-03-29 15:34:48" itemprop="dateModified" datetime="2019-03-29T15:34:48-07:00">2019-03-29</time>
               
             
           </span>
@@ -460,13 +460,13 @@
 
       
         <h3 id="Basic-Operations"><a href="#Basic-Operations" class="headerlink" title="Basic Operations"></a>Basic Operations</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">6</span> &amp; <span class="number">4</span>     <span class="comment"># 4. Bitwise and</span></span><br><span class="line"><span class="number">1</span> | <span class="number">2</span>     <span class="comment"># 3. Bitwise or</span></span><br><span class="line"><span class="number">8</span> &gt;&gt; <span class="number">2</span>    <span class="comment"># 2. Bitwise right shift</span></span><br><span class="line"><span class="number">-16</span> &gt;&gt; <span class="number">2</span>  <span class="comment"># -4.</span></span><br><span class="line"><span class="number">-1</span> &gt;&gt; <span class="number">2</span>   <span class="comment"># -1.</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">10</span>   <span class="comment"># 1024. Bitwise left shift</span></span><br><span class="line">~<span class="number">0</span>        <span class="comment"># -1. Returns the complement</span></span><br><span class="line"><span class="number">15</span> ^ x    <span class="comment"># Bitwise XOR</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h4 id="Important-Points"><a href="#Important-Points" class="headerlink" title="Important Points"></a>Important Points</h4><ol>
 <li>A negative number <code>-x</code> is treated by bitwise operators as complement(x - 1).</li>
 <li>-1 is treated as “…11111110” since integers have infinite precision in Python.</li>
 <li>There is no concept of an unsigned shift in Python.</li>
 <li><code>~ x</code> is the same as <code>- x - 1</code>.</li>
-<li>For a negative number <code>-x</code>, <code>complement(-x) = complement(complement(x - 1)) = x - 1</code>. For a positive number <code>x</code>, <code>complement(x) = - x - 1</code>.<a id="more"></a>
-</li>
+<li>For a negative number <code>-x</code>, <code>complement(-x) = complement(complement(x - 1)) = x - 1</code>. For a positive number <code>x</code>, <code>complement(x) = - x - 1</code>.</li>
 </ol>
 <h3 id="Some-Tricks"><a href="#Some-Tricks" class="headerlink" title="Some Tricks"></a>Some Tricks</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># clear the lowermost set bit</span></span><br><span class="line">x &amp; (x - <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># right propagate the rightmost set bit in x</span></span><br><span class="line">x | (x - <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># test if x is  a power of 2</span></span><br><span class="line">x &amp; (x - <span class="number">1</span>) == <span class="number">0</span> <span class="keyword">and</span> x != <span class="number">0</span></span><br></pre></td></tr></table></figure>
 
